@@ -4,6 +4,7 @@ import { listaProdutos } from '../../data/listaProdutos';
 import type { TipoProduto } from '../../types/types';
 
 export default function Produtos() {
+  document.title = "Produtos";
   const [produtos, setProdutos] = useState<TipoProduto[]>([]);
 
   useEffect(() => {

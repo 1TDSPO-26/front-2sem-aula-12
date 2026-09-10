@@ -1,10 +1,14 @@
 import { useParams } from "react-router";
 
-const listaProdutos = [
-  { id: 1, nome: "Produto 1", preco: 10.0 },
-  { id: 2, nome: "Produto 2", preco: 20.0 },
-  { id: 3, nome: "Produto 3", preco: 30.0 },
-];
+//TAREFA 1: para a AULA do dia 16/09/2026
+//Recuperar o produto selecionado em Produtos que envia o id do produto
+// Você deve utilizar os parâmetros do react-router
+// e o id do produto para o componente EditarProdutos
+// Você deve utilizar os HOOK useParams para recuperar o id do produto, o HOOK useState para armazenar o produto e o HOOK useEffect para atualizar o produto quando o id mudar.
+
+
+
+
 
 
 export default function EditarProdutos() {

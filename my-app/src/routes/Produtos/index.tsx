@@ -17,12 +17,12 @@ export default function Produtos() {
     }, []);
 
     return (
-        <main>
+        <main style={{ padding: '20px' }}>
             <h2>Produtos</h2>
 
-            <table>
+            <table border={1} cellPadding={10} style={{ width: '100%', borderCollapse: 'collapse' }}>
                 <thead>
-                    <tr>
+                    <tr style={{ backgroundColor: '#2c3e50', color: '#ffffff' }}>
                         <th>ID</th>
                         <th>Nome</th>
                         <th>Preço</th>
@@ -38,14 +38,14 @@ export default function Produtos() {
                             <td>{p.nome}</td>
                             <td>{p.preco}</td>
                             <td>{p.descricao}</td>
-                            <td><img src={p.avatar} alt={p.descricao}></img></td>
-                            <td><Link to={`/editar-produtos/{p.id}`}></Link></td>
+                            <td><img src={p.avatar} alt={p.descricao} width={60} height={60} style={{ objectFit: 'cover' }} /></td>
+                            <td><Link to={`/editar-produtos/${p.id}`}></Link></td>
                         </tr>
                     ))}
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td>Quantidade de produtos - {produtos.length}</td>
+                        <td colSpan={6}>Quantidade de produtos - {produtos.length}</td>
                     </tr>
                 </tfoot>
             </table>

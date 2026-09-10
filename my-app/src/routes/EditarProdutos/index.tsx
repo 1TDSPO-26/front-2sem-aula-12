@@ -14,7 +14,7 @@ export default function EditarProdutos() {
   const produto = listaProdutos.find((p) => p.id === Number(id));
 
   return (
-    <main>
+    <main style={{ padding: '20px' }}>
       <h2>Editar produtos</h2>
       <div>
         {produto ? (
@@ -25,6 +25,7 @@ export default function EditarProdutos() {
         ) : (
           <p>Produto não encontrado!</p>
         )}
+        <p>Identificador recebido pela rota: <strong>{id}</strong></p>
       </div>
     </main>
   );

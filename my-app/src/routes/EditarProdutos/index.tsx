@@ -6,6 +6,7 @@ const listaProdutos = [
   { id: 3, nome: "Produto 3", preco: 30.0 },
 ];
 
+
 export default function EditarProdutos() {
   //Modificar o título da página;
   document.title = "Editar Produtos";
